@@ -1,0 +1,16 @@
+{
+    "host": "ftp.dbpersada.com",
+    "username": "kissshot",
+    "password": "empat4444",
+    "remotePath": "/home/dbpa4851/public_html/dbpersada.com",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
