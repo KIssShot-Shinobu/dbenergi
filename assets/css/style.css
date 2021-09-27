@@ -109,11 +109,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color:rgba(40, 58, 90, 0.9) ;
+  background-color:rgba(17, 226, 41, 0.9) ;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(17, 226, 41, 0.9);
 }
 
 #header .logo {
@@ -131,7 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  height: 60;
+  width: 120;
+ /*  max-height: 50px;
+  max-width: 100px; */
 }
 
 /*--------------------------------------------------------------
@@ -391,7 +394,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   padding-top: 10px;
+  padding-bottom: 0px;
 }
+
+.container-box {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  align-self: center;
+}
+
 
 
 #hero h1 {
