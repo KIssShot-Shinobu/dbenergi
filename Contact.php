@@ -74,37 +74,30 @@
 
   <!-- Body -->
   <section>
-    <div class="wrapper container" style="padding-top: 5%;">
-      <header>Send us a Message</header>
-      <form action="#">
-        <div class="dbl-field">
-          <div class="field">
-            <input type="text" name="name" placeholder="Enter your name">
-            <i class='fas fa-user'></i>
-          </div>
-          <div class="field">
-            <input type="text" name="email" placeholder="Enter your email">
-            <i class='fas fa-envelope'></i>
-          </div>
-        </div>
-        <div class="dbl-field">
-          <div class="field">
-            <input type="text" name="phone" placeholder="Enter your phone">
-            <i class='fas fa-phone-alt'></i>
-          </div>
-          <div class="field">
-            <input type="text" name="website" placeholder="Enter your website">
-            <i class='fas fa-globe'></i>
-          </div>
-        </div>
-        <div class="message">
-          <textarea placeholder="Write your message" name="message"></textarea>
-          <i class="material-icons">message</i>
-        </div>
-        <div class="button-area">
-          <button type="submit">Send Message</button>
-          <span></span>
-        </div>
+    <div class="containeremail">
+      <form id="contact" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+        <?php if(!empty($notify)){ ?>
+        <p class="notify <?php echo !empty($notifyClass)?$notifyClass:''; ?>">
+          <?php echo $notify; ?>
+        </p>
+        <?php } ?>
+        <h3>Contact Form</h3>
+        <h4>Hubungi kami dengan mengisi isian dibawah</h4>
+        <fieldset>
+          <input placeholder="Nama Anda" type="text" name="name" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email Anda" type="text" name="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Subject (optional)" type="text" name="subject" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Ketikan pesan Anda" name="message" tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Mengirim pesan">Kirim</button>
+        </fieldset>
       </form>
     </div>
 
