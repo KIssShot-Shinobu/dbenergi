@@ -1540,8 +1540,8 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 0px 0;
-  background: #f3f5fa;
+  padding: 20px 0;
+  background: #ffffff;
   min-height: 20px;
   margin-top: 90px;
 }
@@ -2196,3 +2196,4 @@ width: 50%;
 .honeypot-field {
 display: none;
 }
+
