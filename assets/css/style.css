@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -549,7 +549,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 .section-title h2 {
@@ -2197,3 +2197,8 @@ width: 50%;
 display: none;
 }
 
+
+
+.menu{
+  text-align: center;
+}
